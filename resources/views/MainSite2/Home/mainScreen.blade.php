@@ -4,6 +4,7 @@
         @php
             $i = 0;
         @endphp
+        
         @foreach ($slides as $slide)
             <div class="carousel-item {{ $i == 0 ? 'active' : ' ' }}">
                 @php
