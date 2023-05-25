@@ -12,7 +12,7 @@
                 <section style="position: relative">
 
                     <div style="width: 100%;">
-                        <img src="{{ Storage::url('app/public/Admin/UI/' . $slide->slider_banner) }}"
+                        <img src="{{ asset('/storage/Admin/UI/' . $slide->slider_banner) }}"
                             alt="{{ $slide->slider_banner }}"
                             style="display: block; object-fit: cover;width: -webkit-fill-available;">
                     </div>
