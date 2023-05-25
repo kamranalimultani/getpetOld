@@ -15,7 +15,7 @@ class ProductRequest extends Migration
     {
         Schema::create('productRequest', function (Blueprint $table) {
             $table->id('id');
-            $table->int('p_id');
+            $table->string('p_id');
             $table->string('name');
             $table->string('phone');
             $table->string('StateId');
