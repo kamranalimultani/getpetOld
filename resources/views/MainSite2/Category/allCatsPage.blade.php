@@ -7,7 +7,7 @@
         <div class="m-4 row gx-4 gx-lg-5 align-items-center my-5">
             <div class="col-lg-7"><a href="{{ url('/category/' . $slug . '/' . $item->main_cat_id) }}" ><img
                         width="600" class="img-fluid rounded mb-4 mb-lg-0 "
-                        src="{{ '/storage/app/public/Admin/category/' . $item->main_cat_banner_image }}" alt="..."></a>
+                        src="{{asset('/storage/Admin/category/' . $item->main_cat_banner_image) }}" alt="..."></a>
             </div>
             <div class="col-lg-5">
                 <h3 class="font-weight-light">{{ $item->main_cat_name }}</h3>

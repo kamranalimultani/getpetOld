@@ -13,7 +13,7 @@
 
 							<img class="post post-classic box-md"
                             style="border-radius: 4px;width:170px;height:210px;object-fit: cover"
-                            src="{{ '/storage/app/public/Admin/category/' . $cat->main_cat_small_image }}"
+                            src="{{ asset('/storage/Admin/category/' . $cat->main_cat_small_image) }}"
                             width="200px" height="auto" alt="{{ $cat->main_cat_small_image }}">
 							<div class="thumb-content md-mt-20" style="position: absolute;top: 10px;">
 								<h6 style="color: white;margin-left: 10px">{{ $cat->main_cat_name }}</h6>

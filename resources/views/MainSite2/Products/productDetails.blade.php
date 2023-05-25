@@ -199,17 +199,17 @@
                 <div class="col-md-6 border-end">
                     <div class="d-flex flex-column justify-content-center">
                         <div class="main_image"> <img
-                                src="{{ '/storage/app/public/Admin/Products/' . $product->p_main_image }}"
+                                src="{{asset('/storage/Admin/Products/'. $product->p_main_image) }}"
                                 id="main_product_image" width="350"> </div>
                         <div class="thumbnail_images">
                             <ul id="thumbnail">
                                 <li><img onclick="changeImage(this)"
-                                        src="{{ '/storage/app/public/Admin/Products/' . $product->p_main_image }}"
+                                        src="{{ asset('/storage/Admin/Products/'. $product->p_main_image) }}"
                                         width="70"></li>
 
                                 @foreach ($images as $item)
                                     <li><img onclick="changeImage(this)"
-                                            src="{{ '/storage/app/public/Admin/Products/' . $item->image_name }}"
+                                            src="{{ asset('/storage/Admin/Products/') . $item->image_name }}"
                                             width="70"></li>
                                 @endforeach
 

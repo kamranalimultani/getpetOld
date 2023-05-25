@@ -23,7 +23,7 @@
             <div class=" m-3">Note: Seller will get back to you after validating your request with in 12 hours.</div> <br>
             <div class="container mt-2 mb-5">
                 <img class="mt-5" style="width: 150px"
-                    src="{{ '/storage/app/public/Admin/Products/' . $product->p_main_image }}" alt="">
+                    src="{{ asset('/storage/Admin/Products/' . $product->p_main_image) }}" alt="">
                 <h4>{{ $product->p_name }}</h4>
                 <form class="" method="post" action="{{ url('/product/request') }}">
                     @csrf

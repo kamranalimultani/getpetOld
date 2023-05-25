@@ -25,7 +25,7 @@
                                         <div class="col-sm-6 {{ $index > 1 ? 'mt-5' : '' }}">
                                             <article style="height: 300px;" class="post mt-5 post-classic box-md "><a
                                                     class="post-classic-figure" href="{{url('blog-post/'.$item->post_id)}}"><img
-                                                    src=" {{ ('/storage/app/public/Admin/Posts/' . $item->post_image) }}"
+                                                    src=" {{ asset('/storage/Admin/Posts/' . $item->post_image) }}"
                                                         width="370" height="239" style="max-height: 170px;
                                                         object-fit: cover;"></a>
                                                 <div class="post-classic-content">
