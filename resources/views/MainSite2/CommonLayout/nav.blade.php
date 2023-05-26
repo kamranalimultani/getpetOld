@@ -123,7 +123,7 @@
                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{url('/coming-soon')}}">More..</a></li>
                       </ul>
                     </li>
-                    <li class="rd-nav-item "><a class="rd-nav-link " href="{{url('blog-posts/')}}">Posts</a><span class="rd-navbar-submenu-toggle"></span>
+                    <li class="rd-nav-item "><a class="rd-nav-link " target="__blank" href="https://blogs.getpet.in">Posts</a><span class="rd-navbar-submenu-toggle"></span>
                       <!-- RD Navbar Dropdown-->
                       {{-- <ul class="rd-menu rd-navbar-dropdown">
                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Tips</a></li>
