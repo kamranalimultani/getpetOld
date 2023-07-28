@@ -12,6 +12,7 @@
     <meta property="og:title" content="{{ $title }}">
     <meta property="og:image" content="https://getpet.in/images/Logo.png">
     <meta name="keywords" content="{{ $tags }}">
+    <link rel="manifest" href="{{asset('manifest.json')}}">
 
     <link rel="icon" href="https://getpet.in/images/favicon.ico" type="image/x-icon">
 
@@ -22,8 +23,26 @@
 
     <link rel="stylesheet" href="{{ asset('mainsite2/fonts.css') }}">
     <link rel="stylesheet" href="{{ asset('mainsite2/style.css') }}">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5253011050316147"
-        crossorigin="anonymous"></script>
+    {{-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5253011050316147"
+        crossorigin="anonymous"></script> --}}
+        <!-- Hotjar Tracking Code for https://getpet.in/ -->
+<script>
+    (function(h, o, t, j, a, r) {
+        h.hj = h.hj || function() {
+            (h.hj.q = h.hj.q || []).push(arguments)
+        };
+        h._hjSettings = {
+            hjid: 3509059,
+            hjsv: 6
+        };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+</script>
+</head>
 
 <body style="overflow-x: hidden">
 
@@ -81,17 +100,7 @@
       </div> --}}
 
 </body>
-<!-- Hotjar Tracking Code for https://getpet.in/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3509059,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+
 <script src="{{ asset('mainsite2/js/core.min.js') }}"></script>
 <script src="{{ asset('mainsite2/js/script.js') }}"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -121,5 +130,18 @@
       }
       
    </script> --}}
-
+<!-- Add this inside the <body> section of your layout -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered');
+        })
+        .catch(error => {
+          console.error('Service Worker registration failed:', error);
+        });
+    });
+  }
+</script>
 </html>
